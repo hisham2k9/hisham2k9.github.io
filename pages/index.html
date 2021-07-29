@@ -56,6 +56,13 @@
                 margin: 0 auto;
             }
         </style>
+        <style>
+            .responsive
+            {
+                max-width: 100%;
+                height: auto;
+            }
+        </style>
     </head>
     <body>
         
@@ -63,123 +70,110 @@
         <br>
         
         <div class="row">
-            <div class='col-lg-12'>
-                <div class='panel panel-success panel-body'>
-                    <div class="col-sm-3">
-                        <div class="hero-widget well well-sm" >
-                            <div class="icon">
-                                <img src='../images/dp_pic.jpg' height=200px width=160px style="border-radius: 25px;"/>
-                            </div>
-                            <div class="text">
-                                <label class="text-muted">Sayed Hisham</label>
+            <div class="col-sm-3">
+                <div class="hero-widget well well-sm" >
+                    <div class="icon">
+                        <img src='../images/dp_pic.jpg' height=200px width=160px style="border-radius: 25px;"/>
+                    </div>
+                    <div class="text">
+                        <label class="text-muted">Sayed Hisham</label>
+                        <br>
+                        <span>Analyst | Fullstack developer | Healthcare</span>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class='col-lg-9'>
+                <div class="panel panel-info" >
+                    <div class="panel-heading">
+                        About
+                    </div>
+                    <!-- /.panel-heading -->
+                    <div class="panel-body">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-pills">
+                            <li class="active"><a href="#home-pills" data-toggle="tab">Intro</a>
+                            </li>
+                            
+                            <li><a href="#profile-pills" data-toggle="tab">Skills</a>
+                                
+                            </li>
+                            <li><a href="#messages-pills" data-toggle="tab">Qualifications</a>
+                            </li>
+                            <li><a href="#nav-pills" data-toggle="tab">Details</a>
+                                
+                            </li>
+                            
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div class="tab-pane fade in active" id="home-pills">
+                                <h4>Hi, Thanks for stopping by!</h4>
+                                <p>I am an analyst with academic qualification in Healthcare. I love statistics and I code to build things that are useful for business.  I am trained and certified, as well as self-taught in various fields such as Quantitative research, Data Analytics, web development, and Machine Learning. I am mostly driven by curiosity to learn. </p>
                                 <br>
-                                <span>Analyst | Fullstack developer | Healthcare</span>
+                                <p>Beyond this, I am an avid sudoku player, voracious reader, and love swimming and coding.</p>
+                            </div>
+                            <div class="tab-pane fade" id="profile-pills">
+                                <br>
+                                <li>Analysis & Software Develpment of IT systems for Enterprises
+                                    
+                                    <em class='text-success'>(Python, Pandas, Django, VueJS, Postgres, AWS, Linux)</em>
+                                </li>
+                                <li>Data Analytics <em class='text-success'>(Python, MS Excel, Power BI, Tableau)</em></li>
+                                <li>Applied Statistics</li>
+                                <li>Quantitative Research <em><a href="https://www.semanticscholar.org/author/S.-Hisham/66469507" target="_blank">(Five SCI-indexed publications</a>)</em></li>
+                                <li>Machine Learning</li>
+                            </div>
+                            <div class="tab-pane fade" id="messages-pills">
+                                <br>
+                                <li><a href="https://coursera.org/verify/professional-cert/5ADHHRL865WG" target="_blank">Applied Data Science Specialist (IBM)</a></li>
+                                <li>Gold Medalist (Best outgoing student, MCOAHS, Manipal University)</li>
+                                <li><a href="https://www.semanticscholar.org/author/S.-Hisham/66469507" target="_blank">
+                                    Five Research work Scopus Indexed International journals.</a>
+                                </li>
+                                <li>IASSC Lean Six Sigma Green Belt (Anexas Europe)</li>
+                                <li>
+                                    <a href="https://coursera.org/verify/N6A9YYY3SCZF" target="_blank">
+                                        Data Analytics in Lean Six Sigma Certification (University of Amsterdam)
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://coursera.org/verify/specialization/26YHTMQEKYSW" target="_blank">
+                                        Business Analytics Certification (Rice University)
+                                    </a>
+                                </li>
+                            </div>
+                            <div class="tab-pane fade" id="nav-pills">
+                                <h4>Press Link to Navigate</h4>
+                                <ul>
+                                    <li><small><a href="#" class='intLink' id=workPortfolio_Master>Work Porfolio</a></small>
+                                        <ul>
+                                            <li><small><a href="#" class='intLink' id=BMHAnalytics_Index>My Time at BMH in Analytics</a></small></li>
+                                            <li><small><a href="#" class='intLink' id=BMHOperations_Index>My Time at BMH in Operations</a></small></li>
+                                            <li><small><a href="#" class='intLink' id=BMHTrainee_Index>My Time at BMH as Trainee</a></small></li>
+                                            <li><small><a href="#" class='intLink' id=intern_Index>My Time as Intern</a></small></li>
+                                            <li><small><a href="#" class='intLink' id='ITConsulting_Index'>My Analytics and IT consulting Works</a></small></li>
+                                        </ul>
+                                    </li>
+                                    <li><small><a href="#" class='intLink' id='recognitions_Index'>Recognitions and Involvements</a></small></li>
+                                    <li><small><a href="#" class='intLink' id='qualifications_Index'>Academic Qualification and Education</a></small></li>
+                                    <li><small><a href="#" class='intLink' id='recommendations_Index'>Recommendations and Testimonials</a></small></li>
+                                    <li><small><a href="#" class='intLink' id='timeline_Index'>My Timeline</a></small></li>
+
+                                </ul>
                             </div>
                             
                         </div>
                     </div>
-                    <div class='col-lg-9'>
-                        <div class="panel panel-info" >
-                            <div class="panel-heading">
-                                About
-                            </div>
-                            <!-- /.panel-heading -->
-                            <div class="panel-body">
-                                <!-- Nav tabs -->
-                                <ul class="nav nav-pills">
-                                    <li class="active"><a href="#home-pills" data-toggle="tab">Intro</a>
-                                    </li>
-                                    
-                                    <li><a href="#profile-pills" data-toggle="tab">Skills</a>
-                                        
-                                    </li>
-                                    <li><a href="#messages-pills" data-toggle="tab">Qualifications</a>
-                                    </li>
-                                    <li><a href="#nav-pills" data-toggle="tab">Details</a>
-                                        
-                                    </li>
-                                    
-                                </ul>
-    
-                                <!-- Tab panes -->
-                                <div class="tab-content">
-                                    <div class="tab-pane fade in active" id="home-pills">
-                                        <h4>Hi, Thanks for stopping by!</h4>
-                                        <p>I am an analyst with academic qualification in Healthcare. I love statistics and I code to build things that are useful for business.  I am trained and certified, as well as self-taught in various fields such as Quantitative research, Data Analytics, web development, and Machine Learning. I am mostly driven by curiosity to learn. </p>
-                                        <br>
-                                        <p>Beyond this, I am an avid sudoku player, voracious reader, and love swimming and coding.</p>
-                                    </div>
-                                    <div class="tab-pane fade" id="profile-pills">
-                                        <br>
-                                        <li>Analysis & Software Develpment of IT systems for Enterprises
-                                            
-                                            <em class='text-success'>(Python, Pandas, Django, VueJS, Postgres, AWS, Linux)</em>
-                                        </li>
-                                        <li>Data Analytics <em class='text-success'>(Python, MS Excel, Power BI, Tableau)</em></li>
-                                        <li>Applied Statistics</li>
-                                        <li>Quantitative Research <em><a href="https://www.semanticscholar.org/author/S.-Hisham/66469507" target="_blank">(Five SCI-indexed publications</a>)</em></li>
-                                        <li>Machine Learning</li>
-                                    </div>
-                                    <div class="tab-pane fade" id="messages-pills">
-                                        <br>
-                                        <li><a href="https://coursera.org/verify/professional-cert/5ADHHRL865WG" target="_blank">Applied Data Science Specialist (IBM)</a></li>
-                                        <li>Gold Medalist (Best outgoing student, MCOAHS, Manipal University)</li>
-                                        <li><a href="https://www.semanticscholar.org/author/S.-Hisham/66469507" target="_blank">
-                                            Five Research work Scopus Indexed International journals.</a>
-                                        </li>
-                                        <li>IASSC Lean Six Sigma Green Belt (Anexas Europe)</li>
-                                        <li>
-                                            <a href="https://coursera.org/verify/N6A9YYY3SCZF" target="_blank">
-                                                Data Analytics in Lean Six Sigma Certification (University of Amsterdam)
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://coursera.org/verify/specialization/26YHTMQEKYSW" target="_blank">
-                                                Business Analytics Certification (Rice University)
-                                            </a>
-                                        </li>
-                                    </div>
-                                    <div class="tab-pane fade" id="nav-pills">
-                                        <h4>Press Link to Navigate</h4>
-                                        <ul>
-                                            <li><small><a href="#" class='intLink' id=workPortfolio_Master>Work Porfolio</a></small>
-                                                <ul>
-                                                    <li><small><a href="#" class='intLink' id=BMHAnalytics_Index>My Time at BMH in Analytics</a></small></li>
-                                                    <li><small><a href="#" class='intLink' id=BMHOperations_Index>My Time at BMH in Operations</a></small></li>
-                                                    <li><small><a href="#" class='intLink' id=BMHTrainee_Index>My Time at BMH as Trainee</a></small></li>
-                                                    <li><small><a href="#" class='intLink' id=intern_Index>My Time as Intern</a></small></li>
-                                                    <li><small><a href="#" class='intLink' id='ITConsulting_Index'>My Analytics and IT consulting Works</a></small></li>
-                                                </ul>
-                                            </li>
-                                            <li><small><a href="#" class='intLink' id='recognitions_Index'>Recognitions and Involvements</a></small></li>
-                                            <li><small><a href="#" class='intLink' id='qualifications_Index'>Academic Qualification and Education</a></small></li>
-                                            <li><small><a href="#" class='intLink' id='recommendations_Index'>Recommendations and Testimonials</a></small></li>
-                                            <li><small><a href="#" class='intLink' id='timeline_Index'>My Timeline</a></small></li>
-
-                                        </ul>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            <!-- /.panel-body -->
-                            <div class="panel-footer text-right">
-                                <a href="https://www.linkedin.com/in/sayed-hisham/" target="_blank"><button class='btn btn-primary btn-sm'><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</button></a> |
-                                <a href="https://www.github.com/hisham2k9" target="_blank"><button class='btn btn-primary btn-sm' style="background-color:black;"><i class="fa fa-github-square fa-fw"></i>GitHub</button></a> |
-                                <a href="mailto:'hisham2k9@gmail.com" ><button class='btn btn-warning btn-sm' id='emailButton' ><i class="fa fa-envelope-o fa-fw"></i>Email</button></a>
-                            </div>
-                        </div>
+                    <!-- /.panel-body -->
+                    <div class="panel-footer text-right">
+                        <a href="https://www.linkedin.com/in/sayed-hisham/" target="_blank"><button class='btn btn-primary btn-sm'><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</button></a> |
+                        <a href="https://www.github.com/hisham2k9" target="_blank"><button class='btn btn-primary btn-sm' style="background-color:black;"><i class="fa fa-github-square fa-fw"></i>GitHub</button></a> |
+                        <a href="mailto:'hisham2k9@gmail.com" ><button class='btn btn-warning btn-sm' id='emailButton' ><i class="fa fa-envelope-o fa-fw"></i>Email</button></a>
                     </div>
-    
                 </div>
             </div>
-            
-            <style>
-                .responsive
-                {
-                    max-width: 100%;
-                    height: auto;
-                }
-            </style>
             <!-- /.col-lg-12 -->
         </div>
         <div class='row'>
