@@ -182,7 +182,7 @@
                     <div class="panel-heading">
                         <i class="fa fa-clock-o fa-fw"></i>Timeline
                         <div class='text-right'>
-                            <button class='btn btn-primary btn-sm intLink' id='timeline_beginningButton'style="position:relative; bottom:15px;">Read from Beginning</button>
+                            <button class='btn btn-primary btn-sm ' id='beginningButton'style="position:relative; bottom:15px;">Read from Beginning</button>
                         </div>
                     </div>
                     
@@ -716,7 +716,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="timeline-inverted">
+                            <li class="timeline-inverted" id=timeline>
                                 <div class="timeline-badge warning"><i class="fa  fa-arrow-circle-o-up"></i>
                                 </div>
                                 <div class="timeline-panel">
@@ -733,7 +733,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="">
+                            <li class="" >
                                 <div class="timeline-badge info"><i class="fa  fa-graduation-cap"></i>
                                 </div>
                                 <div class="timeline-panel">
@@ -745,7 +745,7 @@
                                             </small>
                                         </p>
                                     </div>
-                                    <div class="timeline-body">
+                                    <div class="timeline-body" >
                                         <p>Completed Grade 12 with Science (Computer science and Biology) from International Indian School, Jeddah.</p>
                                     </div>
                                 </div>
@@ -753,7 +753,7 @@
                             <li class="timeline-inverted">
                                 <div class="timeline-badge success"><i class="fa  fa-graduation-cap"></i>
                                 </div>
-                                <div class="timeline-panel">
+                                <div class="timeline-panel" >
                                     <div class="timeline-heading">
                                         <h4 class="timeline-title">Completed Grade 10</h4>
 
@@ -762,7 +762,7 @@
                                             </small>
                                         </p>
                                     </div>
-                                    <div class="timeline-body" id=timeline>
+                                    <div class="timeline-body" >
                                         <p>Completed Grade 10  from International Indian School, Jeddah.</p>
                                     </div>
                                 </div>
@@ -1089,6 +1089,19 @@
                 {
                     alert('could not find the heading!');
                 }
+                
+
+            });
+        </script>
+        <script>
+            $('#beginningButton').click(function()
+            {
+                
+                $("html, body").animate({scrollTop:$("#timeline").offset().top},"slow");
+                //var y = $(window).scrollTop();
+                //$(window).scrollTop(y+150);
+                
+                
                 
 
             });
