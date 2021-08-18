@@ -237,7 +237,7 @@
                             </li>
                             
                         </ul>
-                        <em class='text-danger'>*Scroll Up to go through timeline!</em>
+                        <em class='text-danger' id="scrollTimeline">*Scroll Up to go through timeline!</em>
                     </div>
                     <!-- /.panel-body -->
                 </div>
@@ -568,9 +568,9 @@
             $('#beginningButton').click(function()
             {
                 
-                $("html, body").animate({scrollTop:$("#timeline").offset().top},"slow");
-                //var y = $(window).scrollTop();
-                //$(window).scrollTop(y+150);
+                $("html, body").animate({scrollTop:$("#scrollTimeline").offset().top},"slow");
+                var y = $(window).scrollTop();
+                $(window).scrollTop(y-150);
                 
                 
                 
@@ -621,12 +621,17 @@
                         //console.log(s);
                         var j = 0;
                         var inverted=false
-                        for(let i=s.length-1;i>=2;i--)
+                        for(let i=s.length-1;i>=1;i--)
                         {
                             //dic['slno']=s[i][0];
                             
                             dic=new Object;
                             //console.log(s[i-1]);
+                            dic['last']=false;
+                            if (i==2)
+                            {
+                                dic['last']=true;
+                            }
                             dic['title']=s[i][1];
                             dic['icon']=s[i][2];
                             dic['date']=s[i][3];
