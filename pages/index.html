@@ -255,15 +255,18 @@
                             <div id=portfolioObject class="panel-body">
                                 <ul v-for="item in workList">
                                     <div v-if="item.isTitle=='TRUE'">
-                                        <b><p v-html="span(item.content)"></p></b>
-                                        <div v-if="item.images">
-                                            <br>
-                                            <img v-for="image in workList.images" v-bind:src="image" height=150px width=410px class='center  responsive'>
-                                            <br>
-                                        </div>
+                                        <b><li v-bind:id=item.id  v-html="span(item.content)"></li></b>
+                                        
+                                        
                                     </div>
                                     <div v-else>
-                                        <p v-html="span(item.content)"></p>
+                                        
+                                        <li v-bind:id=item.id v-html="span(item.content)"></li>
+                                        <div v-if="item.images[0] !=''">
+                                            <img v-for="image in item.images" v-bind:src="image" height=150px width=410px class='center  responsive'>
+                                            <br>
+                                        </div>
+                                        
                                     </div>
 
                                 </ul>
