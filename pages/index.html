@@ -254,7 +254,7 @@
                             </div>
                             <div id=portfolioObject class="panel-body">
                                 <ul v-for="item in workList">
-                                    <div v-if="item.isTitle==TRUE">
+                                    <div v-if="item.isTitle=='TRUE'">
                                         <b><p v-html="span(item.content)"></p></b>
                                         <div v-if="item.images">
                                             <br>
@@ -263,7 +263,6 @@
                                         </div>
                                     </div>
                                     <div v-else>
-                                        hi
                                         <p v-html="span(item.content)"></p>
                                     </div>
 
@@ -506,7 +505,7 @@
                         s=$.csv.toArrays(data);
                         var j = 0;
 
-                        for(let i=1; i<=s.length;i++)
+                        for(let i=1; i<s.length;i++)
                         {
                             dic=new Object;
                             dic["id"] = s[i][0];
