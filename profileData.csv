@@ -37,4 +37,5 @@ Sl No,Title,icon,date,text
 36,Angram Game released,fa fa-gamepad,21-Aug,"Created a new website that can let its users create,share and play Anagram Puzzles at <a href=""https://jumble.sayedhisham.com"" target=""_blank"">Jumbly: Anagram Maker"" </a>"
 37,Took a Course on Healthcare Management,fa fa-laptop,21-Sep,Gave a Course/Lecture to PhD students of Manipal Academy of Higher Education on Healthcare Management
 38,An IVR Application to Rest APIs,fa  fa-arrow-circle-o-up,21-Sep,"In my new role at BUPA, migrated an entire application encompassing around ~70 API from SOAP architecture to modern Restful API architecture. (flask/Python)"
-39,A short URL Service,fa fa-tag,21-Sep,"Created a URL Shortening service similar to bitly at <a href=""http://www.2k9.in"" target=""_blank"">2k9.in</a>."
+39,A short URL Service,fa fa-tag,21-Sep,"Created a URL Shortening service similar to bitly for Bupa Arabia for Customer Email and SMS."
+40,Jenkins Automation,fa fa-play-circle-o,21-Sep,"Jenkins Automated CI/CD pipeline right from code push->Test->Deployment."
