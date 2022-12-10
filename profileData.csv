@@ -44,4 +44,6 @@ Sl No,Title,icon,date,text
 43,Einvoicing Project Commences,fa fa-check-circle,22-Mar,"Application Performance Monitoring through Log monitoring in ELK."
 44,Technical Design and Architecture,fa fa-cube,22-Apr,"Drew out Technical Design and Architecture for integration new solution"
 45,Einvoice Solution Development,fa fa-code,22-June,"Development of core Einvoicing solution starts and completes in 3 months"
-46,Scheduled service for Invoice Clearance,fa fa-cube,22-Aug,"A scheduled system working in tandem with legacy ERP collection data, creating Invoice and submitting to regulatory body."
+46,Scheduled service for Invoice Clearance,fa fa-cube,22-Aug,"A scheduler system working in tandem with legacy ERP collection data, creating Invoice and submitting to regulatory body."
+47,Insight,fa fa-lightbulb-o,22-Sep,"Creation of Front end for Technical Team to manage the PID, TDD, And other reports and documents for multiple projects."
+48,Einvoice UI,fa fa-simplybuilt,22-Nov,"Creation of Front end for the Einvoicing Solution for business users to trace the submission/automated creation of invoice and status of acceptance by regulatory body."
