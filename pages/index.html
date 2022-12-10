@@ -249,196 +249,25 @@
                 <div class='row'>
                     <div class='col-lg-12'>
                         <div class='panel panel-success'>
-                            <div id=workPortfolio class='panel-heading'>
+                            <div  class='panel-heading'>
                                 Work PortFolio
                             </div>
-                            
-                            <div class='panel-body'>
-                                <ul>
-                                    <b><li id=BUPAConsultant>Tehnology Consultant – IT, BUPA Arabia, Jeddah, KSA. August 2021 – Present
-                                    </li></b>
-                                    
-                                        <li><b>E-invoicing Solution:</b>  Technical Design and Development for Regulatory(ZATCA) Compliance E-invoicing Solution for organization wide implementation. The scope included a new system for integration of existing invoicing solution with E-invoicing Phase II (KSA) (Spring boot, Python, Angular, Jenkins, Elastic search).
+                            <div id=portfolioObject class="panel-body">
+                                <ul v-for="item in workList">
+                                    <div v-if="item.isTitle==TRUE">
+                                        <b><p v-html="span(item.content)"></p></b>
+                                        <div v-if="item.images">
                                             <br>
-                                            <img src='../images/einvoice.png'  height=150px width=410px class='center  responsive'/>
+                                            <img v-for="image in workList.images" v-bind:src="image" height=150px width=410px class='center  responsive'>
                                             <br>
-                                        </li>
-                                        <li><b>Insight: </b> Creation of Front end for Technical Team to manage the PID, TDD, And other reports and documents for multiple projects that connected to Microsoft TFS and a NodeJs backend. (Angular) (Document Management System)
-                                            <br>
-                                            <img src='../images/insight.png' height=150px width=410px class='center  responsive'/>
-                                            <br>
-                                        </li>
-                                        <li><b>Application Performance Management System (APM): </b> Continuous live monitoring, alerts and hourly reports for critical application. Immediate alerts and actions on IT service issues and Resolution before customer escalation. (Elasticsearch, NodeJS, Python, VueJS, Pandas, Numpy, Jenkins).
-                                            <br>
-                                            <img src='../images/apm.png' height=150px width=410px class='center  responsive'/>
-                                            <br>
-                                        </li>
-                                        <li><b>URL Shortening Service: </b> URL Shortening service that encrypts and shortens long URL into 15-character URL for consumption in SMS and Email service. Reduced cost of sending SMS to three Million customer-base by half. (Elasticsearch, Python, Django, Jenkins). 
-                                            
-                                        </li>
-                                        <li><b>IVRS service Migration </b>for SOAP based application to Restful APIs connected to IBM ACE middleware gateway. (Python, flask).
-                                        </li>
-                                        <li><b>ElasticSearch Log Management: </b> Monitoring and servicing ELK Log management and Kibana.
-                                            <br>
-                                            <img src='../images/elk.png' height=225px width=400px class='center responsive'/>
-                                            <br>
-                                        </li>
-                                        <li>Various other DevOps related automation using Python scripts & Jenkins (Daily backups, Log analysis, Alerts).
-                                        </li>
-                                        <li>Documentation and mapping of core Insurance functions to corresponding system wide APIs.
-                                        </li>
-                                    
+                                        </div>
+                                    </div>
+                                    <div v-else>
+                                        hi
+                                        <p v-html="span(item.content)"></p>
+                                    </div>
+
                                 </ul>
-                                <ul>
-                                    <b><li id=BMHAnalytics>Assistant Manager – Healthcare Analytics, Baby Memorial Hospital, Kozhikode, Kerala. July 2020 – July 2021
-                                    </li></b>
-                                    
-                                        <li>A <b>Nursing MIS & QMS system</b> that covered critical clinical and administrative workflow of nurses and informative dashboard that gave live feed of ground situation to top level managers of the ground situation at various nursing a stations.
-                                            <br>
-                                            <img src='../images/nqms.PNG'  class='center  responsive'/>
-                                            <br>
-                                        </li>
-                                        <li>A complete <b>Hospital CQI module</b> in line with NABH and JCI requirements that can be completely maintained at user level with interactive dashboard for cqi, monthly record updating by quality admins, and maintenance of master.
-                                            <br>
-                                            <img src='../images/CQI project.PNG' height=150px width=410px class='center  responsive'/>
-                                            <br>
-                                        </li>
-                                        <li>A <b>Document Management System (DMS)</b> with complete features including version-controling,multiple document types (SOPS, MoU, Agreements, Licenses,department Manuals, etc) , verification ans approval workflow, dashboard, document expiry alert systems etc
-                                            <br>
-                                            <img src='../images/dms.PNG' height=225px width=400px class='center  responsive'/>
-                                            <br>
-                                        </li>
-                                        <li>A <b>Feedback Analytics Engine</b> and module that can be used to make custom forms on the fly and can be distributed. and also a dedicated engine for analytics with custom dashboards.
-                                            <br>
-                                            <img src='../images/fba.PNG' height=225px width=400px class='center  responsive'/>
-                                            <br>
-                                        </li>
-                                        <li>A <b>Badge Appraisal System</b> similar to LinkedIn kudos, that can be used to mark the employee performance over the course of a year and used to appraise them.
-                                            <br>
-                                            <img src='../images/bas.PNG' height=225px width=400px class='center responsive'/>
-                                            <br>
-                                        </li>
-                                        <li>A <b>Quiz & Games</b> application that comprised to three games: Crosswords, wordsearch and jumble words. The games can be designed by user on the fly. this can then be distributed for the staff to play & submit their results. this was designed with the concept of "learning through gamification" in mind.
-                                            <br>
-                                            <img src='../images/crossword.PNG' height=225px width=400px class='center responsive'/>
-                                            <br>
-                                        </li>
-                                        <li>An <b>E-learning & Assessment Platform</b> with courses and their reference materials can be created. the participants can enroll for various types of courses and training upon completion of which the participants are issued automated certificates.
-                                            <br>
-                                            <img src='../images/aqm.PNG' height=225px width=400px class='center responsive'/>
-                                            <br>
-                                        </li>
-                                        <li>An internal <b>Quality Audits</b> Module based on the NABH 5th edition that is completely administeredby the quality department. the standards, checklists, and locations are maintained as masters and can be edited/updated by admin users. the audits can be scheduled and teams can be created. the digital checklists can be used for audit assessment. the automated reports will be generated based on the checklist.
-                                            <br>
-                                            <img src='../images/ats.PNG' height=225px width=400px class='center responsive'/>
-                                            <br>
-                                        </li>
-                                    
-                                </ul>
-                                <ul>
-                                    <b><li id=BMHOperations>Assistant Manager – Operations, Baby Memorial Hospital, Kozhikode, Kerala. Jan 2020 – Jun 2020
-                                    </li></b>
-                                    
-                                        <li>Developed a <b>Roster Automation Tool (Rota)</b> for scheduling the roster of a 600 manpower nursing workforce on monthly basis. The tool has been estimated to save ~1400 hours of man-hours in a year. (stack: Python & Django)
-                                            <br>
-                                            <img src='../images/rota.PNG' height=150px width=480px class='center responsive'/>
-                                            <br>
-                                        </li>
-                                        <li>Created a full-fledged & comprehensive <b>Healthcare Quality Management System (HQMS)</b> covering modules: Incident Management System, (Preventive) Action Plan Tracker, Committee management and meeting g minutes tracker, mockdrill tracker. (Stack: PostgreSQL, Django, Python, Vue.js, Bootstrap, Jquery).
-                                            <br>
-                                            <img src='../images/hqms.PNG' height=225px width=400px class='center responsive'/>
-                                            <br>
-                                            <br>
-                                            <img src='../images/comm.PNG' height=225px width=400px class='center responsive'/>
-                                            <br>
-                                            <br>
-                                            <img src='../images/mda.PNG' height=225px width=400px class='center responsive'/>
-                                            <br>
-                                        </li>
-                                        <li>Created and conducted training module in nursing informatics for Nurse Managers and other nurses in leadership roles spanning over two months. Received an average feedback rating of 4.8 of 5 from the students.
-                                            <br>
-                                            <img src='../images/nurse_informatics.PNG' height=200px width=300px class='center responsive'/>
-                                            <br>
-                                        </li>
-                                        <li>Regularly created informative Dashboards using tools such as Power BI & Tableau to measure the performance of clinical departments and their outputs.
-                                        </li>
-                                        <li>Created comprehensive 360-degree metrics for analysing the performance of Nursing & clinical departments.
-                                        </li>
-                                    </ul>
-                                
-                                <ul>
-                                    <b><li id=BMHTrainee>
-                                        Management Trainee - Operations, Baby Memorial Hospital, Kozhikode, Kerala. Jul 2019 – Dec 2019.
-                                    </li></b>
-                                    
-                                        <li>
-                                            System Analysis & Design of IT-enabled Nursing MIS. Designed system for automating and IT enabling nursing processes.
-                                        </li>
-                                        <li>
-                                            Carried a brief study on scope for lean initiatives and improvement at the Emergency department. The outcome included significant improvement in terms of nurse satisfaction, reduced patient Turn- around Time of 40%, among many other intangible benefits.
-                                        </li>
-                                        <li>
-                                            Lean Six Sigma project on improving Discharge process. Proposed solution for reducing discharge TAT from 3 to 1.5 hours.
-                                        </li>
-                                        <li>
-                                            Coordinate, monitor and report day to day operations of clinical Unit to COO and Chief of Medical Services.
-                                        </li>
-                                        <li>
-                                            Several Business development and clinical research activities for the Cardiology Unit of the hospital.
-                                        </li>
-                                    
-                                
-                                
-                                    <b><li id="ITConsulting">
-                                        Analytics & IT Consulting. Mar 2014 – Present.
-                                    </li></b>
-                                    
-                                        <li>
-                                            Consulted and Published multiple academic papers on Healthcare, Machine Learning, Medical documentation and ethics where my primary role was that of an Analyst.
-                                        </li>
-                                        <li>
-                                            Worked on an <a href="https://www.researchgate.net/publication/329732301_Assessment_of_Healthcare_Systems_Across_BRICS_Nations_What_India_Can_Learn_from_the_Rest" target=_blank>Academic Paper</a> Review of Healthcare system and infrastructure across BRICS Nations and How these countries changed over time. The study also focused on how and what India can learn from the rest of the BRICS countries. My role in the project was that of an Analyst diving deep into data and literature, cleaning dataset, organizing and summarizing conclusions. The work is published in JCDR, a reputed Academic Journal and I am the First Author for the project.
-                                        </li>
-                                        <li>
-                                            Worked on a <a href="https://www.researchgate.net/publication/329732301_Assessment_of_Healthcare_Systems_Across_BRICS_Nations_What_India_Can_Learn_from_the_Rest" target=_blank>Case-Study</a> on effectiveness of Telemedicine during Covid-19 pandemic in a tertiary care hospital. My role in the project was that of an analyst.
-                                        </li>
-                                        <li>
-                                            Comprehensive Online/live dashboard for India & Rest of the world during Covid-19 Pandemic hosted at AWS and <a href="https://hisham2k9.pythonanywhere.com" target="_blank">pythonanywhere</a>. The website garnered 12,000 users during April & May 2020. The data garnering was automating with multiple APIs and Scheduled web-scrapping. The project used MySQL, Django, Vue.js and is Open-sourced on <a href="https://https://github.com/hisham2k9/covid_dash" target="_blank">GitHub</a>.
-                                        </li>
-                                        <li>
-                                            Comprehensive Incident Management System with RCA and CAPA maintained as Open-Source Project on <a href="https://github.com/hisham2k9/IMS-and-CAPA" target="_blank">GitHub</a>.
-                                        </li>
-                                        <li>
-                                            Created and successfully tested model for predicting Patients footfall of clinical department with a variance score of 87% and SE of ± 8 patients. Model developed using ML-libraries in Python. (open-sourced on <a href="https://github.com/hisham2k9/Share_files" target="_blank">GitHub</a>).
-                                        </li>
-                                        <li>
-                                            Developed and successfully tested a Discharge TAT Predictor with ~80% variance score, developed through in Python (under review for publication). (Source code openly made available in my <a href="https://github.com/hisham2k9/Share_files" target="_blank">GitHub</a>).
-                                        </li>
-                                        <li>
-                                            Designed & Developed few utility applications for Windows and Android with Microsoft Visual Studio and published application on <a href="https://play.google.com/store/apps/developer?id=Sayed+Hisham" target="_blank">Google PlayStore</a> respectively.
-                                        </li>
-                                    
-                                
-                                
-                                    <b><li>
-                                        Analyst Intern with Project at Star Care Hospital, Kozhikode, Kerala (2 Months) in 2019.
-                                    </li></b>
-                                    
-                                        <li>
-                                            Assessing NABH compliance in documentation and providing solutions. Found key lacunae in medical documentation practices as per NABH standards, and designed electronic forms for reducing non-compliance.
-                                        </li>
-                                    
-                                
-                                
-                                    <b><li id="intern">
-                                        Analyst Intern with Project at VPS Lakeshore Hospital, Cochin, Kerala (4 Months) in 2017.
-                                    </li></b>
-                                    
-                                        <li>
-                                            Assessing and improving Medico-legal knowledge to nurses and other Health professionals. The project and Outcome published in an <a href="https://www.semanticscholar.org/paper/Awareness-of-Medico-Legal-Aspects-and-Documentation-Hisham-Dsouza/fe9393393320812988e53300812a153086068545" target="_blank">International Journal</a>.
-                                        </li>
-                                    
-                                
                             </div>
                         </div>
                     </div>   
@@ -617,6 +446,24 @@
         </script>
 
         <script>
+            //Vue component handling portfolio
+            var portfolio = new Vue(
+                {
+                    el:"#portfolioObject",
+                    data:{
+                        workList:[]
+                    },
+                    methods:
+                    {
+                        span(text) 
+                        {
+                            return `<span> ${text} </span>`
+                    
+                        }
+                
+                    }
+                }
+            )
             //vue component handling timeline
             var timeline=new Vue(
                 {
@@ -643,7 +490,38 @@
             {
                 return this[Math.floor((Math.random()*this.length))];
             }
-            function getData()
+            function getPortfolio()
+            {
+                var csvUrl="https://raw.githubusercontent.com/hisham2k9/hisham2k9.github.io/master/portfolioData.csv";
+                //csvUrl="../portfolioData.csv";
+                $.ajax({
+                    type: "GET",
+                    url: csvUrl,
+                    dataType: "text",
+                    success: function(data) {
+                        console.log('portfolio response');
+                        console.log(data);
+                        var dic=new Object;
+                        var ls=[];
+                        s=$.csv.toArrays(data);
+                        var j = 0;
+
+                        for(let i=1; i<=s.length;i++)
+                        {
+                            dic=new Object;
+                            dic["id"] = s[i][0];
+                            dic["content"]=s[i][1];
+                            dic["isTitle"]=s[i][2];
+                            dic["images"]=s[i][3].split(",");
+                            ls.push(dic);
+                        }
+                        portfolio.workList=ls;
+                    }
+                });
+
+
+            }
+            function getTimeLine()
             {
                 var csvUrl="https://raw.githubusercontent.com/hisham2k9/hisham2k9.github.io/master/profileData.csv";
                 //csvUrl="../profileData.csv";
@@ -698,7 +576,8 @@
 
             $(document).ready(function()
             {
-                getData();
+                getTimeLine();
+                getPortfolio();
             });
    
         </script>
