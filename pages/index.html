@@ -70,7 +70,12 @@
                 max-width: 100%;
                 height: auto;
             }
-
+            .job-title{
+                font-size:17px;
+                padding-left:19px;
+                list-style-type: square;
+            }
+            
         
 
         .buttonTab {
@@ -217,23 +222,16 @@
                                 Work PortFolio
                             </div>
                             <div id=portfolioObject class="panel-body">
-                                <ul v-for="item in workList">
-                                    <div v-if="item.isTitle=='TRUE'">
-                                        <b><li v-bind:id=item.id  v-html="span(item.content)"></li></b>
-                                        
-                                        
-                                    </div>
-                                    <div v-else>
-                                        
+                                <div v-for="item in workList">
+                                    <ul v-if="item.isTitle=='TRUE'" class="job-title"><b  ><li v-bind:id=item.id  v-html="span(item.content)"></li></b></ul>
+                                    <ul v-else >
                                         <li v-bind:id=item.id v-html="span(item.content)"></li>
                                         <div v-if="item.images[0] !=''">
                                             <img v-for="image in item.images" v-bind:src="image" height=150px width=410px class='center  responsive'>
                                             <br>
                                         </div>
-                                        
-                                    </div>
-
-                                </ul>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>   
@@ -288,7 +286,6 @@
                             <div class='panel-heading' id="qualifications">
                                 Academic Qualification & Certifications
                             </div>
-                            
                             <div class='panel-body'>
                                 <ul>
                                     <li><b><em>Master of Hospital Administration,</em></b> Department of Public Health, Manipal, MAHE (CGPA = 8.9 of 10).
@@ -502,7 +499,6 @@
                     dataType: "text",
                     success: function(data) {
                         console.log('portfolio response');
-                        console.log(data);
                         var dic=new Object;
                         var ls=[];
                         s=$.csv.toArrays(data);
